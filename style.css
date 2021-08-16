@@ -1,14 +1,18 @@
 
 
 .content{
-  position: relative;
+  position: absolute;
   height: 13rem;
+  min-height: 11rem;
+  max-height: 13rem;
   width: 21rem;
+  min-width: 15rem;
+  max-width: 21rem;
   border-radius: 0.5rem;
-  background: linear-gradient(-135deg, #11998e, #38ef7d);
+  /* background: linear-gradient(-135deg, #38ef7d, #11998e); */
+  background: linear-gradient(-135deg, #0F2027, #2C5364);
   backdrop-filter: blur(30px);  /* This will produce the blur */
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
 }
 
 .index{
