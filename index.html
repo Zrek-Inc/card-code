@@ -8,8 +8,6 @@
 </head>
 <body>
   <script>
-    function doGet(e) {
-
   var data = {
     'key_number': 536,
     'unit': 'kg-CO2',
@@ -17,10 +15,8 @@
     'good_thru': '20/09/22',
     'url': 'https://z-rek.com/',
   }
-
-  return ContentService.createTextOutput(JSON.stringify(data))
-    .setMimeType(ContentService.MimeType.JSON);
-}
+  document.write(data)
+    
   </script>
 
 </body>
