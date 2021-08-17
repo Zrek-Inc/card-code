@@ -9,10 +9,10 @@
 
 window.onload = function(){
 $.getJSON(jsonFile, (data) => {
-  $('#key_number').html(data[0].key_number)
-  $('#unit_kg_co2').html(data[0].unit)
-  $('#name').html(data[0].username)
-  $('#date').html(data[0].good_thru)
-  $('#button').attr("href", data[0].url)
+  $('#key_number').html(data.key_number)
+  $('#unit_kg_co2').html(data.unit)
+  $('#name').html(data.username)
+  $('#date').html(data.good_thru)
+  $('#button').attr("href", data.url)
 })
 }
