@@ -1,7 +1,14 @@
+/*!
+ * 株式会社Zrek / Zrek Inc.
+ * https://z-rek.com
+ *
+ * Date: 2021/08/17
+ * Copyright © 2021 Zrek inc. All Rights Reserved.
+ */
 
 
 .content{
-  position: absolute;
+  position: relative;
   height: 13rem;
   min-height: 11rem;
   max-height: 13rem;
@@ -12,7 +19,7 @@
   /* background: linear-gradient(-135deg, #38ef7d, #11998e); */
   background: linear-gradient(-135deg, #0F2027, #2C5364);
   backdrop-filter: blur(30px);  /* This will produce the blur */
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 80px rgba(0, 0, 0, 0.2); */
 }
 
 .index{
