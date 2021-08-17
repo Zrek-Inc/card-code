@@ -3,80 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>テスト</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<!-- <script>
-$(document).ready(function(){
-  console.log('ajax');
-$.ajax({
-　type: 'GET',
-　url: 'https://script.google.com/macros/s/AKfycbz1CzjY4RlnPPW0RWCdDvBUrJTS0_qovNTU4fn7KGNfvkchDkix5izGHIDqhkaN4QpV/exec',
-　dataType: 'json',
-　success: 
-function(data) {
-    $('#conteiner').html(data.name)
-　}
-　})
-})
-</script> -->
-
-<script>
-window.onload = function(){
-  console.log('success');
-$.getJSON('https://script.google.com/macros/s/AKfycbwe3tia_WICBDmF2hfZGePzq9KVecX5e8XtF3lfQsNEbej4_gBKJ6-AzH3RWGtkVRD3/exec', (data) => {
-  $('#key_number').html(data.key_number)
-  $('#unit_kg_co2').html(data.unit)
-  $('#name').html(data.name)
-  $('#date').html(data.good_thru)
-  $('#button').attr("href", data.url)
-  console.log(data);
-})
-}
-</script>
-
 
 <body>
-  
-<link rel="stylesheet" href="https://zrek-inc.github.io/card-json/style.css">
-<div class="main" style="margin: 10rem 10rem;">
-  <!-- Card -->
-  <div class="content">
-    <div class="index">
-      <div class="key_number" id="key_number">
-        XXX
-      </div>
-      <div class="unit">
-        <div class="unit_kg_co2" id="unit_kg_co2">XX-XXX</div>
-        <div class="unit_month">/month</div>      
-      </div>
-    </div>
 
-    <div class="item_1">
-      <div class="name" id="name">XXXXXX</div>
 
-      <div class="good_thru">
-        <div class="field">
-          <div class="field_good">GOOD</div>
-          <div class="field_thru">THRU</div>
-        </div>
-        <div class="date" id="date">
-          XX/XX/XX
-        </div>
-      </div>
-    </div>
+<!-- card -->
+<script>
+  var jsonFile = 'data.json'
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://card-code.z-rek.dev/main.js"></script>
+<link rel="stylesheet" href="https://card-code.z-rek.dev/style.css">
 
-    <div class="item_2">
-      <div class="title">Digital Carbon Dioxide Emission</div>
-    </div>
-
-    <div class="item_3">
-      <div class="brand_name">ZREK</div>
-      <a href="https://www.mitsubishielectric.co.jp/corporate/philanthropy/index.html" class="button" id="button">more</a>
-    </div>
-  </div>
-</div>
-
+<div id="zrek_inc_card"></div>
+<script>
+  $(function(){
+    $("#zrek_inc_card").load("https://card-code.z-rek.dev/card.html");
+    });
+</script>
 
 </body>
 </html>
