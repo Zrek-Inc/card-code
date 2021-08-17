@@ -8,7 +8,7 @@
 
 
 window.onload = function(){
-$.getJSON('data.json', (data) => {
+$.getJSON(jsonFile, (data) => {
   $('#key_number').html(data[0].key_number)
   $('#unit_kg_co2').html(data[0].unit)
   $('#name').html(data[0].username)
