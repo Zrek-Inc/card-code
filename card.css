@@ -8,13 +8,13 @@
     border-radius: 1rem;
 }
 
-@media screen and (max-width:28.53rem){
+@media screen and (max-width:30rem){
     .card{
         position: relative;
         background: url('https://card-code.z-rek.dev/zrek.png');
         background-size: cover;
-        height: 8.995rem;
-        width: 14.265rem;
+        height: 13.4925rem;
+        width: 21.0rem;
         border-radius: 0.5rem;
     }
 }
@@ -27,7 +27,7 @@
     width: 3rem;
 }
 
-@media screen and (max-width:28.53rem){
+@media screen and (max-width:30rem){
     .brand{
         position: absolute;
         bottom: 0.25rem;
@@ -53,7 +53,7 @@
     font-size: 1rem;
   }
 
-  @media screen and (max-width:28.53rem){
+  @media screen and (max-width:30rem){
     .button{    
         position: absolute;
         bottom: 0.5rem;
