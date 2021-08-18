@@ -1,8 +1,6 @@
 
 .card{
     position: relative;
-    background: url('https://card-code.z-rek.dev/zrek.png');
-    background-size: cover;
     height: 17.99rem;
     width: 28.53rem;
     border-radius: 1rem;
@@ -11,8 +9,6 @@
 @media screen and (max-width:28.53rem){
     .card{
         position: relative;
-        background: url('https://card-code.z-rek.dev/zrek.png');
-        background-size: cover;
         height: 13.4925rem;
         width: 21.3975rem;
         border-radius: 0.75rem;
